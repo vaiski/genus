@@ -8,6 +8,7 @@ table {
     border-spacing: 0;
 
     -webkit-overflow-scrolling: touch;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 table caption {
