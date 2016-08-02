@@ -1,8 +1,6 @@
 <div class="vcard author" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <a href="{{ SITEURL }}/{{ article.author.url }}">
-        <div class="flex">
-            <img class="photo circle" itemprop="image" content="{{ GRAVATAR_IMAGE }}" src="{{ GRAVATAR_IMAGE }}"/>
-            <strong class="fn name" itemprop="name">{{ article.author }}</strong>
-        </div>
+        <img class="photo circle" itemprop="image" content="{{ GRAVATAR_IMAGE }}" src="{{ GRAVATAR_IMAGE }}"/>
+        <strong class="fn name" itemprop="name">{{ article.author }}</strong>
     </a>
 </div>

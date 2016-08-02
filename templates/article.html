@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block title %}{{ article.title | striptags }}{% endblock %}
 {% block content %}
-<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
-        <h2 itemprop="headline" id="{{ article.slug }}">{{ article.title }}</h2>
+        <h1 itemprop="headline" id="{{ article.slug }}">{{ article.title }}</h1>
         <p>
             <meta itemprop="datePublished" content="{{ article.date.isoformat() }}">
             <meta itemprop="dateModified" content="{{ article.date.isoformat() }}">
@@ -17,7 +17,6 @@
         {{ article.content }}
     </section>
     <footer>
-        {% include "fragments/author.html" %}
         {% if article.tags %}
         <div class="tags">
             {% for tag in article.tags %}
@@ -25,6 +24,7 @@
             {% endfor %}
         </div>
         {% endif %}
+        {% include "fragments/author.html" %}
     </footer>
 </article>
 {% endblock %}

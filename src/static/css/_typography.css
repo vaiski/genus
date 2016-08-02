@@ -18,31 +18,59 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
+    margin: 2rem 0 1rem 0;
 }
 
-h1 {
-    font-size: 2.5em;
-}
-
-h2 {
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 1.5em;
-}
-
-h4 {
-    font-size: 1.15em;
-}
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.15em; }
+h5 { font-size: 1em; }
+h6 { font-size: 0.93rem; }
 
 p, ol, ul, dl, .math-display {
     line-height: 1.58;
     margin-bottom: 1em;
 }
 
+ul, ol {
+    padding-left: 2rem;
+    font-family: "Source Serif Pro", serif;
+}
+
+ol.arabic {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
 .site-header h1 {
     font-size: 1.75rem;
+}
+
+.site-header p {
+    color: rgba(255, 255, 255, .7);
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.site-footer {
+    text-align: center;
+}
+
+article header p {
+    color: rgba(0, 0, 0, .55);
+}
+
+p.caption {
+    font-style: italic;
+    font-size: 1rem;
+    margin: .5rem 0 1rem 0;
+    text-align: center;
+    color: rgba(0,0,0,.55);
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 pre {
@@ -50,8 +78,12 @@ pre {
     font-size: 1rem;
 }
 
-#content p {
+#content {
     font-family: "Source Serif Pro", serif;
+}
+
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 /* Tablets */

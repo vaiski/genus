@@ -1,5 +1,5 @@
 a {
-    color: #1abc9c;
+    color: #159957;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -24,7 +24,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 .site-footer {
-    color: rgba(0, 0, 0, .6);
+    color: rgba(0, 0, 0, .55);
 }
 
 .author a {

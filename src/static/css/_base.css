@@ -1,6 +1,6 @@
 
 article {
-    margin: 2.5% 12.5;
+    margin: 3rem 0;
 }
 
 a {
@@ -14,14 +14,24 @@ img {
 }
 
 blockquote {
-    padding: 0 1rem;
-    margin-left: 0;
+    width: 65%;
+    display: block;
+    margin: 1rem auto;
     color: rgba(0,0,0,.5);
-    border-left: 0.3rem solid rgba(0,0,0,.5);
+    font-size: 1.6rem;
     font-style: italic;
 }
 
 blockquote .attribution {
     font-style: normal;
     font-size: 1rem;
+    margin-bottom: 1.84rem;
+}
+
+hr {
+    width: 50%;
+    height: 0;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.3);
+    margin: 2em auto;
 }

@@ -2,9 +2,19 @@
 {% block content %}
     {% for article in articles_page.object_list %}
     <article>
-        <h2>
-            <a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{{ article.title }}</a>
-        </h2>
+        <header>
+            <h2>
+                <a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{{ article.title }}</a>
+            </h2>
+            <p>
+                <meta itemprop="datePublished" content="{{ article.date.isoformat() }}">
+                <meta itemprop="dateModified" content="{{ article.date.isoformat() }}">
+                {% if GRAVATAR_IMAGE %}
+                <meta itemprop="image" content="{{ GRAVATAR_IMAGE }}">
+                {% endif %}
+                Posted on {{ article.date | strftime('%d %B %Y') }} in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+            </p>
+        </header>
 
         {% if summarise or article.metadata['summary'] or SUMMARY_MAX_LENGTH %}
             {{ article.summary }}
