@@ -1,0 +1,4 @@
+.flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}

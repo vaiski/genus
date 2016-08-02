@@ -1,0 +1,27 @@
+table {
+    margin-bottom: 1.3rem;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+th, td {
+    border: 1px solid #e9ebec;
+    padding: .5rem 1rem;
+}
+
+th {
+    font-weight: bold;
+}
+
+

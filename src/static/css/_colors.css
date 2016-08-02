@@ -1,0 +1,52 @@
+a {
+    color: #1abc9c;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #000;
+}
+
+.site-header {
+
+    /* Moss */
+    background: #134E5E;
+    background: -webkit-linear-gradient(to left, #134E5E , #71B280);
+    background: linear-gradient(to left, #134E5E , #71B280);
+
+    /* Fresh Turboscent */
+    /*background: #F1F2B5;
+    background: -webkit-linear-gradient(to left, #F1F2B5 , #135058);
+    background: linear-gradient(to left, #F1F2B5 , #135058);*/
+}
+
+.site-header a {
+    color: #fff;
+}
+
+.site-footer {
+    color: rgba(0, 0, 0, .6);
+}
+
+.author a {
+    color: #000;
+}
+
+.tags a {
+    background-color: rgba(0, 0, 0, .07);
+    color: rgba(0, 0, 0, .6);
+}
+
+.tags a:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.highlight {
+    padding: 1.5em;
+    border-radius: .3em;
+    overflow: auto;
+    margin-bottom: 1em;
+}
+
+.highlight pre {
+    margin: 0;
+}

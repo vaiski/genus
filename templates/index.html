@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+    {% for article in articles_page.object_list %}
+    <article>
+        <h2>
+            <a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{{ article.title }}</a>
+        </h2>
+
+        {% if summarise or article.metadata['summary'] or SUMMARY_MAX_LENGTH %}
+            {{ article.summary }}
+            <a class="button" href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">Continue reading</a>
+        {% else %}
+            {{ article.content }}
+        {% endif %}
+    </article>
+    {% endfor %}
+{% endblock %}
